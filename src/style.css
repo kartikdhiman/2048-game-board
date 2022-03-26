@@ -1,7 +1,4 @@
 :root {
-  --grid-size: 4;
-  --cell-size: 20vmin;
-  --cell-gap: 2vmin;
   --border-radius: 1vmin;
 }
 
@@ -39,12 +36,6 @@ body {
 }
 
 .tile {
-  --x: 2;
-  --y: 1;
-
-  --background-lightness:80%;
-  --text-lightness: 20%;
-
   position: absolute;
   top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
   left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
