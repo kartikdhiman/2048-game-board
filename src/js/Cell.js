@@ -17,6 +17,14 @@ export default class Cell {
 		this.#y = y;
 	}
 
+	get x() {
+		return this.#x;
+	}
+
+	get y() {
+		return this.#y;
+	}
+
 	get tile() {
 		return this.#tile;
 	}
@@ -29,5 +37,13 @@ export default class Cell {
 		if (value == null) return;
 		this.#tile.x = this.#x;
 		this.#tile.y = this.#y;
+	}
+
+	/**
+	 * 
+	 * @param {Cell} cell 
+	 */
+	equals(cell) {
+		return cell.x === this.#x && cell.y === this.#y;
 	}
 }
